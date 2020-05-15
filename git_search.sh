@@ -3,8 +3,8 @@
 
 if [ $# != 1 ]
 then
-    echo "usage: <expression>"
-    return 1
+  echo "usage: <expression>"
+  return 1
 fi
 
 expression=$1
