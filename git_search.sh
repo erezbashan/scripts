@@ -1,8 +1,12 @@
+#!/bin/bash
+#set -x
+
 if [ $# != 1 ]
 then
     echo "usage: <expression>"
     return 1
 fi
+
 expression=$1
 git bisect start HEAD $(git rev-list HEAD | tail -n 1 ) -- | grep 'Bisecting:'
 git bisect run sh -c "grep -q -r '$expression' .; test \$? = 1" | grep 'Bisecting:'
