@@ -8,4 +8,6 @@ fi
 
 zipfile=$1
 pattern=$2
-unzip -q -l $zipfile | grep $pattern | awk '{print $4}'
+unzip -q -l $zipfile |
+grep $pattern |
+awk '{print $4}'

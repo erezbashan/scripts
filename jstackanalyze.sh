@@ -21,6 +21,7 @@ END {
 }
 '
 
-gawk "$awk" $@ | countlines.sh
+gawk "$awk" $@ |
+countlines.sh
 
 
