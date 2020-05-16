@@ -19,3 +19,5 @@ then
   return 2
 fi
 unzip -q -c $zipfile $(cat $tmp)
+
+rm ${tmp}

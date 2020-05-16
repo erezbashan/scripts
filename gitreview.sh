@@ -27,4 +27,5 @@ open $(
   g "http" |
   awk '{print $2}'
 )
+rm ${file}
 

@@ -36,3 +36,6 @@ then
   egrep -v "$g" |
   head -1
 fi
+
+rm ${input}
+rm ${results}
