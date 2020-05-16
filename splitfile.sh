@@ -3,7 +3,7 @@
 if [ $# != 2 ]
 then
   echo "usage: <term> <file>"
-  exit
+  exit 1
 fi
 
 term="$1"

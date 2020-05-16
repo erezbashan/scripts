@@ -1,9 +1,9 @@
 #!/bin/bash
 
-file=/tmp/js.$$
+file=/tmp/${USER}.$(basename "$0" | cut -d '.' -f 1).$$
 
 while $(sleep 1)
 do 
   jstack.sh >> ${file}
-  echo "written into /tmp/js.$$"
+  echo "written into ${file}"
 done

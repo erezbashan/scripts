@@ -3,7 +3,7 @@
 if [ $# != 1 ]
 then
   echo "usage: <expression>"
-  return 1
+  exit 1
 fi
 
 expression=$1
